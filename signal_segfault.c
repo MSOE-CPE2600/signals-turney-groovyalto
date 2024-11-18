@@ -4,15 +4,27 @@
  */
 
 /**
- * Modified by:
- * 
- * Brief summary of modifications:
+ * Modified by: Alex Toma
+ * Assignment: Lab 10: Signals
+ * Class Section: 121
+ * Brief summary of modifications: added a segfault handler function and a signal into main
  */
 
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
+
+void segfault_handler()
+{
+    printf("Segmentaion fault recieved\n");
+}
 
 int main (int argc, char* argv[]) {
+    
+    // signal register
+    signal(SIGSEGV, segfault_handler);
     // Declare a null pointer
     int* i = NULL;
 

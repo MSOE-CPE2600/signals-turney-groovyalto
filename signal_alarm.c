@@ -1,7 +1,8 @@
 /**
  * File: signal_alarm.c
  * Modified by: Alex Toma
- * 
+ * Assignment: Lab 10: Signals
+ * Class Section: 121
  * Brief summary of program: this program sets a 5 second alarm and waits in an
  * infinite loop. Once the alarm signal is recieved, it handles it and exits
  */
@@ -34,6 +35,6 @@ int main()
         // makes sure the loop isn't empty so program runs
         i++; 
     }
-    
+
     return i;
 }

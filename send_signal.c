@@ -1,7 +1,8 @@
 /**
  * File: send_signal.c
  * Modified by: Alex Toma
- * 
+ * Assignment: Lab 10: Signals
+ * Class Section: 121
  * Brief summary of program: this program sends a SIGUSR1 signal with a random int value 
  * to a specified pid using the sigqueue function
  */

@@ -1,7 +1,8 @@
 /**
  * File: recv_signal.c
  * Modified by: Alex Toma
- * 
+ * Assignment: Lab 10: Signals
+ * Class Section: 121 
  * Brief summary of program: this program waits for a SIGUSR1 signal using a sigaction 
  * handler and prints the value passed with the signal before exiting
  */

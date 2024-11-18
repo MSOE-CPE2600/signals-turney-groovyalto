@@ -5,7 +5,8 @@
 
 /**
  * Modified by: Alex Toma
- * 
+ * Assignment: Lab 10: Signals
+ * Class Section: 121
  * Brief summary of modifications: replaced handle_signal method's exit case with the  
  * kill function, which allows for a termination of the programs pid using SIGKILL
  */
