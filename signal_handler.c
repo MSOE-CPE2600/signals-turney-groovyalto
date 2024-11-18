@@ -4,11 +4,11 @@
  */
 
 /**
- * Modified by:
+ * Modified by: Alex Toma
  * 
- * Brief summary of modifications:
+ * Brief summary of modifications: replaced handle_signal method's exit case with the  
+ * kill function, which allows for a termination of the programs pid using SIGKILL
  */
-
 
 #include <signal.h>
 #include <unistd.h>
@@ -20,7 +20,7 @@
  */
 void handle_signal() {
     printf("Received a signal\n");
-    exit(1);
+    kill(getpid(), SIGKILL);
 }
 
 int main() {
